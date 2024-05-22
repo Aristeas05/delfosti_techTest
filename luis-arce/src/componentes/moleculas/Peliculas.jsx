@@ -2,6 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './estilos_moleculas.scss';
 import CardInfo from '../atomos/CardInfo';
 
+/**
+ * 
+ * @param {Array} peliculas [Array con la lista de peliculas a mostrar] 
+ * @param {Array} genero [Array que contiene todos los generos de peliculas permitidas a mostrarse]
+ * @returns {ReactNode} [Elemento React con todas las peliculas listadas]
+ */
 const Peliculas = ({peliculas, genero}) => {
 
     const [contador, setContador] = useState(1);

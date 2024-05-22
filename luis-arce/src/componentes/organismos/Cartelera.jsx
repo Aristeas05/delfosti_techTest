@@ -5,12 +5,19 @@ import Peliculas from '../moleculas/Peliculas';
 import Filtro from '../moleculas/Filtro';
 import { getData } from '../../servicios/apis';
 
+/**
+ *
+ * @returns {ReactNode} [Elemento React que muestra la barra de busqueda y los componentes de "Filtro" y "Peliculas"]
+ */
 const Cartelera = () => {
 
     const [listaPeliculas, setListaPeliculas] = useState('');
     const [pelicula, setPelicula] = useState('');
     const [filtroGenero, setFiltroGenero] = useState([]);
 
+    /**
+     * [Esta funcion busca la palabra/frase ingresada en el formulario para mostrar las peliculas que la contengan en su titulo o descripción]
+     */
     const actualizarPeliculasPorTexto = () => {
         let encontrado = [];
         if (pelicula != '') {
@@ -25,6 +32,9 @@ const Cartelera = () => {
         }
     }
 
+    /**
+     * [Esta funcion hace uso del API para cargar los datos al hook "listaPeliculas"]
+     */
     const cargarData = async () =>{
         let jsonData = await getData();
         setListaPeliculas(jsonData.movies);

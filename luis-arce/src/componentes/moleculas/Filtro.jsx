@@ -3,11 +3,20 @@ import BuscadorInput from '../atomos/BuscadorInput';
 import Opcion from '../atomos/Opcion';
 import { getData } from '../../servicios/apis';
 
+/**
+ * 
+ * @param {Array} generoActual [Array con la lista de generos de pelicula actuales permitidos que puedan mostrarse]
+ * @param {function} cambiarGenero [funcion para cambiar el valor de la lista de generos actuales ]
+ * @returns {ReactNode} [Elemento React con las opciones de genero disponibles, despues del filtro]
+ */
 const Filtro = ({generoActual,cambiarGenero}) => {
 
     const [listaGeneros, setListaGeneros] = useState('');
     const [genero, setGenero] = useState('');
 
+    /**
+     * [Esta funcion busca la palabra/frase ingresada en el formulario para mostrar los generos que la contengan en su texto]
+     */
     const actualizarGeneros = () => {
         let encontrado = '';
         if (genero != '') {
@@ -22,6 +31,10 @@ const Filtro = ({generoActual,cambiarGenero}) => {
         }
     }
 
+    /**
+     * [Esta funcion busca el String ingresado en el formulario para mostrar las peliculas pertenezcan al mismo genero]
+     * @param {string} valor [String cuyo valor agrega/quita peliculas que pertenezcan al genero igual al String]
+     */
     const actualizarPeliculasPorGenero = (valor) => {
         let item = '';
         let viejaLista = generoActual;
@@ -41,6 +54,9 @@ const Filtro = ({generoActual,cambiarGenero}) => {
         }
     };
 
+    /**
+     * [Esta funcion hace uso del API para cargar los datos al hook "listaGeneros"]
+     */
     const cargarData = async () =>{
         let jsonData = await getData();
         setListaGeneros(jsonData.genres);

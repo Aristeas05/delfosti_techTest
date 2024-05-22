@@ -1,6 +1,12 @@
 import React from 'react';
 import './estilos_atomos.scss';
-
+/**
+ * 
+ * @param {string} title [String que contiene el titulo de la pelicula]
+ * @param {string} desc [String que contiene la descripcion de la pelicula]
+ * @param {string} generos [String que contiene el genero de la pelicula]
+ * @returns {ReactNode} [Elemento React que forma el card con la informacion de la pelicula]
+ */
 const CardInfo = ({title, desc, generos}) => {
 
     return(
