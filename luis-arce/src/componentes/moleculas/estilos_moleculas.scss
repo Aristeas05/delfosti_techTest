@@ -1,0 +1,36 @@
+//PELICULAS COMPONENT
+.peliculas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin: 0px;
+    @media screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 15px 0px;
+    }
+    @media screen and (min-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 25px;
+        margin: 25px 0px;
+    }
+}
+
+//FILTRO COMPONENT
+.filtro{
+    &__buscador{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 3fr;
+    }
+    &__opciones{
+        margin: 15px 0px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-evenly;
+        @media screen and (min-width: 768px){
+            justify-content: normal;
+        }
+    }
+}

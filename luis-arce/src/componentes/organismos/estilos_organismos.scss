@@ -1,0 +1,7 @@
+.cartelera{
+    &__buscador{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 3fr;
+    }
+}

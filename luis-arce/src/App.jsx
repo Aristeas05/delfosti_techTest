@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.scss';
+import Cartelera from './componentes/organismos/Cartelera';
 
 function App() {
   return (
-    <div>
-      <p>Primer commit</p>
-    </div>
+    <>
+      <Cartelera />
+    </>
   );
 }
 
