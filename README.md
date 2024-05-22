@@ -1,2 +1,7 @@
-# delfosti_techTest
-Reto técnico para Delfosti
+## Guía
+- [Instalacion](#Instalacion)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+#Instalacion
