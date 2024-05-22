@@ -1,4 +1,4 @@
-## Guía
+# Guía
 - [Instalacion](#Instalacion)
 - [Uso](#uso)
 - [Datos API](#Api)
