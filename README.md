@@ -1,7 +1,10 @@
 ## Guía
 - [Instalacion](#Instalacion)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Uso](#uso)
+- [Datos API](#Api)
 
-#Instalacion
+# Instalacion
+
+# Uso
+
+# Datos API
