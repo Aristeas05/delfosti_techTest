@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import BuscadorInput from '../Atomos/BuscadorInput';
-import Opcion from '../Atomos/Opcion';
-import { getData } from '../../Servicios/Apis';
+import BuscadorInput from '../atomos/BuscadorInput';
+import Opcion from '../atomos/Opcion';
+import { getData } from '../../servicios/apis';
 
 /**
  * 
