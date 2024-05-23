@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './estilos_organismos.scss';
-import BuscadorInput from '../atomos/BuscadorInput';
-import Peliculas from '../moleculas/Peliculas';
-import Filtro from '../moleculas/Filtro';
-import { getData } from '../../servicios/apis';
+import BuscadorInput from '../Atomos/BuscadorInput';
+import Peliculas from '../Moleculas/Peliculas';
+import Filtro from '../Moleculas/Filtro';
+import { getData } from '../../Servicios/Apis';
 
 /**
  *

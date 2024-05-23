@@ -1,4 +1,4 @@
-import Cartelera from './componentes/organismos/Cartelera';
+import Cartelera from './componentes/Organismos/Cartelera';
 
 function App() {
   return (
